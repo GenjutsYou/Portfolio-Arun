@@ -4,42 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="header">
+    <div class="backdrop">
+        <img src="EMS.jpg" alt="Backdrop Image">
+        <head>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <style>
+              .backdrop img {
+                max-width: 100%;
+              }
+            </style>
+          </head>
+    </div>
+    <header class="header">
         <h1>My Portfolio</h1>
         <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- <nav>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
-    </div>
+        </nav> -->
+    </header>
     <div class="hero">
-      <img src="EMS.jpg" alt="Arun Mundackal" style="max-width: 100%; height: auto; border-radius: 50%;">
+      <img src=".jpg">
       <h1>Arun Mundackal</h1>
     </div>
     <main>
       <section id="about">
         <h2>About Me</h2>
-        <p>Hi, my name is Arun</p>
+        <p>Hi, my name is Arun. I am a skilled developer with experience in building web applications using various technologies such as HTML, CSS, JavaScript.</p>
       </section>
       <section id="work">
-        <h2>My Work</h2>
-        <div class="gallery">
-          <a href="app1.html"><img src="app1-thumbnail.jpg" alt="Application 1" class="featured"></a>
-          <a href="app2.html"><img src="app2-thumbnail.jpg" alt="Application 2"></a>
-          <a href="app3.html"><img src="app3-thumbnail.jpg" alt="Application 3"></a>
+        <h3>My Work</h3>
+        <nav class="gallery">
+          <a href="#app1"><img src="app1-thumbnail.jpg" alt="Application 1" class="featured"></a>
+          <a href="#app2"><img src="app2-thumbnail.jpg" alt="Application 2"></a>
+          <a href="#app3"><img src="app3-thumbnail.jpg" alt="Application 3"></a>
+        </nav>
+        <div class="app-section">
+          <h3 id="app1">Application 1</h3>
+          <a href="https://app1.com"><img src="app1-image.jpg" alt="Application 1"></a>
+          <p>Description of Application 1</p>
+        </div>
+        <div class="app-section">
+          <h3 id="app2">Application 2</h3>
+          <a href="https://app2.com"><img src="app2-image.jpg" alt="Application 2"></a>
+          <p>Description of Application 2</p>
+        </div>
+        <div class="app-section">
+          <h3 id="app3">Application 3</h3>
+          <a href="https://app3.com"><img src="app3-image.jpg" alt="Application 3"></a>
+          <p>Description of Application 3</p>
         </div>
       </section>
       <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can contact me by email at <a href="arunmundackal7@gmail.com">[arunmundackal7@gmail.com]</a>, or connect with them on <a href="[social media]">[social media]</a>.</p>
+        <p>You can contact me by email at <a href="mailto:arunmundackal7@gmail.com">arunmundackal7@gmail.com</a>, or connect with me on <a href="https://linkedin.com/in/arun-mundackal">LinkedIn</a>.</p>
       </section>
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
