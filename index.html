@@ -26,51 +26,53 @@
             <a href="#work">Work</a>
             <a href="#contact">Contact</a>
         </nav>
-        <!-- <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav> -->
     </header>
     <div class="hero">
-      <img src=".jpg">
-      <h1>Arun Mundackal</h1>
-    </div>
+      <img src="EMS.jpg" alt="Hero Image" style="width: 80px; height: 80px;">
+      <h2>Arun Mundackal</h2>
+  </div>
     <main>
       <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, my name is Arun. I am a skilled developer with experience in building web applications using various technologies such as HTML, CSS, JavaScript.</p>
+        <h3>About Me</h3>
+        <p>Hi, my name is Arun. This is a website to showcase my portfolio that will show that I am a skilled developer with experience in building web applications using various technologies such as HTML, CSS, JavaScript.</p>
+        <p2></p2>
       </section>
       <section id="work">
-        <h3>My Work</h3>
+        <h4>My Work</h4>
         <nav class="gallery">
-          <a href="#app1"><img src="app1-thumbnail.jpg" alt="Application 1" class="featured"></a>
-          <a href="#app2"><img src="app2-thumbnail.jpg" alt="Application 2"></a>
-          <a href="#app3"><img src="app3-thumbnail.jpg" alt="Application 3"></a>
+          <a href="#app1"><img src="cloud.jpg" alt="Application 1" class="featured" style="width:193px; height: 104px;"></a>
+          <a href="#app2"><img src="playground.jpg" alt="Application 2" style="width:128px; height:72px;"></a>
+          <a href="#app3"><img src="rain.jpg" alt="Application 3" style="width:128px; height:72px;"></a>
         </nav>
         <div class="app-section">
-          <h3 id="app1">Application 1</h3>
-          <a href="https://app1.com"><img src="app1-image.jpg" alt="Application 1"></a>
-          <p>Description of Application 1</p>
+          <h5 id="app1">Application 1</h5>
+          <a href="https://app1.com"><img src="cloud.jpg" alt="Application 1" style="width:193px; height: 104px;"></a>
+          <p>Cloud</p>
         </div>
         <div class="app-section">
-          <h3 id="app2">Application 2</h3>
-          <a href="https://app2.com"><img src="app2-image.jpg" alt="Application 2"></a>
-          <p>Description of Application 2</p>
+          <h5 id="app2">Application 2</h5>
+          <a href="https://app2.com"><img src="playground.jpg" alt="Application 2" style="width:128px; height:72px;"></a>
+          <p>Coding-Playground</p>
         </div>
         <div class="app-section">
-          <h3 id="app3">Application 3</h3>
-          <a href="https://app3.com"><img src="app3-image.jpg" alt="Application 3"></a>
-          <p>Description of Application 3</p>
+          <h5 id="app3">Application 3</h5>
+          <a href="https://app3.com"><img src="rain.jpg" alt="Application 3" style="width:128px; height:72px;"></a>
+          <p>Overflow</p>
         </div>
       </section>
       <section id="contact">
-        <h2>Contact Me</h2>
-        <p>You can contact me by email at <a href="mailto:arunmundackal7@gmail.com">arunmundackal7@gmail.com</a>, or connect with me on <a href="https://linkedin.com/in/arun-mundackal">LinkedIn</a>.</p>
+        <h6>Contact Me
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea><br>
+          <input type="submit" value="Send">
+        </form>
+       </h6>
       </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
