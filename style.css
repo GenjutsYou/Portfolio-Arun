@@ -1,30 +1,195 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 150%;
-    height: 100%;
-    z-index: -1;
-    display: flex;
-    flex-wrap: wrap;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-header {
-    background-color: brown;
-    font-size: 25px;
+
+body {
+	min-height: 100vh;
+	background-image: url('Background.jpg');
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+    overflow-y: scroll;
+    background-attachment: fixed;
 }
+
 h1 {
-    color: black;
+	color: azure;
 }
-h2, h3, h4, h5, h6 {
-    color: azure;
-}
+
+h2,
+h3,
+h4,
+h5,
 h6 {
-    background-color: black;
-    font-size: 20px;
+	color: azure;
 }
-form {
-background-color: black;
+
+h6 {
+	background-color: black;
+	font-size: 20px;
 }
+
 p {
-    color: azure;
+	color: azure;
+}
+
+header {
+	flex: 0 1 auto;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-bottom: 20px;
+}
+
+.hero {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero img {
+    width: 80px;
+    height: 80px;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+main {
+	flex: 1 1 auto;
+	max-width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main > section {
+	margin: 1% 0;
+	padding: 0.5% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main > section > h3 {
+	flex: 0 0 15%;
+	text-align: left;
+	font-size: 2rem;
+}
+
+main > section p {
+	font-size: 2rem;
+}
+
+main > section > div {
+	flex: 0 0 85%;
+	padding-left: 1%;
+}
+
+#about {
+	flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+}
+
+#about div {
+	margin-left: auto;
+    border-left: 4px solid brown;
+}
+
+#work {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+}
+
+#work div {
+	margin-left: auto;
+    border-left: 4px solid brown;
+}
+
+#contact {
+	flex: 0 1 auto;
+	display: flex;
+	align-items: center;
+}
+
+#contact div {
+	margin-left: auto;
+    border-left: 4px solid brown;
+}
+
+
+#work .app-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#work .app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+	flex-basis: calc(50% - 1rem);
+	height: 40vh;
+	margin: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5rem;
+}
+
+#work .app-section:first-child {
+	height: 60vh;
+	flex-basis: 100%;
+    margin-bottom: 12rem;
+}
+
+#work .app1 img,
+#work .app2 img,
+#work .app3 img {
+	width: 100%;
+	height: auto;
+	margin-top: 1rem;
+    object-fit: contain;
+}
+
+#work .app1:hover {
+    transform: scale(1.03)
+}
+
+#work .app2:hover,
+#work .app3:hover {
+  transform: scale(1.05);
+}
+
+footer {
+	flex: 0 1 auto;
+	font-size: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-bottom: 20px;
 }

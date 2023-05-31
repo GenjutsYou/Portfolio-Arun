@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <div class="backdrop">
-        <img src="EMS.jpg" alt="Backdrop Image">
-        <head>
-            <link rel="stylesheet" type="text/css" href="style.css">
-            <style>
-              .backdrop img {
-                max-width: 100%;
-              }
-            </style>
-          </head>
-    </div>
-    <header class="header">
-        <h1>My Portfolio</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="hero">
-      <img src="EMS.jpg" alt="Hero Image" style="width: 80px; height: 80px;">
-      <h2>Arun Mundackal</h2>
-  </div>
-    <main>
-      <section id="about">
-        <h3>About Me</h3>
-        <p>Hi, my name is Arun. This is a website to showcase my portfolio that will show that I am a skilled developer with experience in building web applications using various technologies such as HTML, CSS, JavaScript.</p>
-        <p2></p2>
-      </section>
-      <section id="work">
-        <h4>My Work</h4>
-        <nav class="gallery">
-          <a href="#app1"><img src="cloud.jpg" alt="Application 1" class="featured" style="width:193px; height: 104px;"></a>
-          <a href="#app2"><img src="playground.jpg" alt="Application 2" style="width:128px; height:72px;"></a>
-          <a href="#app3"><img src="rain.jpg" alt="Application 3" style="width:128px; height:72px;"></a>
-        </nav>
-        <div class="app-section">
-          <h5 id="app1">Application 1</h5>
-          <a href="https://app1.com"><img src="cloud.jpg" alt="Application 1" style="width:193px; height: 104px;"></a>
-          <p>Cloud</p>
-        </div>
-        <div class="app-section">
-          <h5 id="app2">Application 2</h5>
-          <a href="https://app2.com"><img src="playground.jpg" alt="Application 2" style="width:128px; height:72px;"></a>
-          <p>Coding-Playground</p>
-        </div>
-        <div class="app-section">
-          <h5 id="app3">Application 3</h5>
-          <a href="https://app3.com"><img src="rain.jpg" alt="Application 3" style="width:128px; height:72px;"></a>
-          <p>Overflow</p>
-        </div>
-      </section>
-      <section id="contact">
-        <h6>Contact Me
-        <form action="#" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name"><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea><br>
-          <input type="submit" value="Send">
-        </form>
-       </h6>
-      </section>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<h1>My Portfolio</h1>
+			<nav>
+				<a href="#about">About Me</a>
+				<a href="#work">My Work</a>
+				<a href="#contact">Contact Me</a>
+			</nav>
+		</header>
+		<div class="hero">
+			<img src="EMS2.0.jpg" alt="Hero Image" style="width: 80px; height: 80px" />
+			<div class="hero-content">
+        <h2>Arun Mundackal</h2>
+      </div>
+		</div>
+		<main>
+			<section id="about">
+				<h3>About Me</h3>
+				<div>
+					<p>
+            Hello, my name is Arun. Welcome to my professional portfolio website, which highlights my expertise as a skilled developer with substantial experience in building dynamic web applications using a diverse range of technologies, including HTML, CSS, and JavaScript.
+
+            Through this platform, I aim to demonstrate my proficiency and accomplishments in the field, showcasing my ability to create innovative and user-friendly web solutions. 
+
+            Thank you for taking the time to explore my portfolio. I am excited to showcase my skills and further improvements in web development. If you have any questions or would like to discuss potential opportunities, please don't hesitate to reach out.
+
+          </p>
+				</div>
+			</section>
+			<section id="work">
+				<h3>My Work</h3>
+				<div class="app-container">
+					<a href="https://github.com/GenjutsYou" class="app-section app1">
+						<h5>Application 1</h5>
+						<p>Cloud</p>
+            <img src="./cloud.jpg" alt="Cloud Image">
+					</a>
+					<a href="https://github.com/GenjutsYou?tab=repositories" class="app-section app2">
+						<h5 id="app2">Application 2</h5>
+						<p>Coding-Playground</p>
+            <img src="./playground.jpg" alt="Playground Image">
+					</a>
+					<a href="https://github.com/GenjutsYou?tab=projects" class="app-section app3">
+						<h5 id="app3">Application 3</h5>
+						<p>Overflow</p>
+            <img src="./rain.jpg" alt="Rain Image">
+					</a>
+				</div>
+			</section>
+			<section id="contact">
+				<h3>Contact Me</h3>
+				<div>
+          <p>Feel free to reach out to me with any questions, inquiries, or opportunities you may have! </p>
+				</div>
+			</section>
+		</main>
+    <footer>
+      <p>"No matter what darkness lies ahead, as long as you keep moving forward, you will eventually reach the light."</p>
+      <p>- Itachi Uchiha</p>
+    </footer>
+  	</body>
 </html>
