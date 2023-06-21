@@ -19,6 +19,7 @@ As an employer, you have the opportunity to explore my portfolio and witness the
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [License](#license)
 - [Features](#features)
 - [Link](#link)
 
@@ -33,6 +34,10 @@ To gain valuable insights into my skills and expertise, simply visit my Develope
 ## Credits
 
 Arun Mundackal
+
+## License
+
+MIT License
 
 ## Features
 
