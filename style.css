@@ -250,55 +250,14 @@ footer {
 	border-top: 7px solid rgb(130, 21, 21);
 }
 
-/* @media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .header .nav-container {
-    width: 100%;
-  }
-
-  .header nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
-
-  .header nav a {
-    display: block;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    align-items: center;
-  }
-
-  .hero img {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  main {
-    max-width: 100%;
-    padding: 1rem;
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
   }
 
   #about,
   #work,
   #contact {
-    padding: 30px;
-    margin-top: 0;
-    margin-bottom: 0;
+    background-attachment: fixed;
   }
-
-  #work .app-section {
-    flex-basis: 100%;
-    height: auto;
-    margin-bottom: 3rem;
-  }
-
-  footer {
-    margin-top: 3rem;
-  }
-} */
+}
