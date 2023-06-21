@@ -18,49 +18,93 @@ body {
 	flex-direction: column;
     overflow-y: scroll;
     background-attachment: fixed;
+	overflow-x: auto;
 }
 
 h1 {
 	color: azure;
+	font-size: 5rem;
+	margin-bottom: 1.5rem;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 2rem;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
+	color: azure;
+	font-size: 3rem;
+	margin-top: 3rem;
+}
+
+h3 {
+	color: azure;
+}
+
+h4 {
+	color: azure;
+}
+
+h5 {
 	color: azure;
 }
 
 h6 {
+	color: azure;
 	background-color: black;
 	font-size: 20px;
 }
 
 p {
-	color: azure;
+  color: azure;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-header {
-	flex: 0 1 auto;
-	font-size: 25px;
+.header {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
-    margin-bottom: 20px;
+	margin-bottom: 1rem;
+	border-bottom: 7px solid rgb(130, 21, 21);
+}
+
+.header .nav-container {
+	width: 100%;
+}
+
+.header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.header nav a {
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	align-items: center;
 }
 
 .hero {
     flex: 0 1 auto;
     display: flex;
+	flex-direction: column;
     align-items: center;
+	text-align: center;
   }
   
   .hero img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     animation: rotate 2s linear infinite;
     transform-origin: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
   }
 
   .hero-content {
@@ -85,63 +129,73 @@ main {
 }
 
 main > section {
-	margin: 1% 0;
-	padding: 0.5% 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+
 }
 
 main > section > h3 {
-    margin: 0;
-    padding: 0;
-	flex: 0 0 15%;
-	text-align: left;
-	font-size: 1.5rem;
-    display: flex;
-	flex-wrap: wrap;
+
 }
 
 main > section p {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 main > section > div {
-	flex: 0 0 85%;
-	padding-left: 1%;
+
 }
 
 #about {
 	flex: 0 1 auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+	border: 3px solid rgb(130, 21, 21);
 }
 
-#about div {
-	margin-left: auto;
-    border-left: 4px solid brown;
+#about h3 {
+	margin: 2rem;
+	border-bottom: 3px solid rgb(130, 21, 21);
+	font-size: 1.5rem;
 }
 
 #work {
 	flex: 0 1 auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+	border: 3px solid rgb(130, 21, 21);
 }
 
-#work div {
-	margin-left: auto;
-    border-left: 4px solid brown;
+#work h3 {
+	margin: 2rem;
+	border-bottom: 3px solid rgb(130, 21, 21);
+	font-size: 1.5rem;
 }
 
 #contact {
 	flex: 0 1 auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+	border: 3px solid rgb(130, 21, 21);
 }
 
-#contact div {
-	margin-left: auto;
-    border-left: 4px solid brown;
+#contact h3 {
+	margin: 2rem;
+	border-bottom: 3px solid rgb(130, 21, 21);
+	font-size: 1.5rem;
 }
 
 
@@ -191,7 +245,60 @@ main > section > div {
 
 footer {
 	text-align: center;
-    white-space: nowrap;
     font-size: 1rem;
     margin-top: 5rem;
+	border-top: 7px solid rgb(130, 21, 21);
 }
+
+/* @media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .nav-container {
+    width: 100%;
+  }
+
+  .header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .header nav a {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+
+  .hero img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  #about,
+  #work,
+  #contact {
+    padding: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #work .app-section {
+    flex-basis: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }
+} */
