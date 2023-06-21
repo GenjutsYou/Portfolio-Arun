@@ -1,6 +1,6 @@
 # Welcome to my portfolio!
 
-Here, you'll embark on a journey through the evolution of my projects, spanning from HTML and CSS to JavaScript. 
+Here, you will embark on a journey through the evolution of my projects, starting with HTML, CSS, and JavaScript. 
 
 Take your time to explore the diverse range of projects I have worked on, each showcasing my unwavering dedication and commitment to delivering top-notch web solutions.
 
@@ -36,7 +36,7 @@ Arun Mundackal
 
 ## Features
 
-Discover my professional developer portfolio, featuring my name, photo, smooth navigation, captivating project showcase, emphasis on the first application, clickable images leading to live deployments, and a responsive layout for seamless viewing across devices.
+Discover my professional developer portfolio, featuring smooth navigation, captivating project showcase, clickable images leading to live deployments, and a responsive layout for seamless viewing across devices.
 
 ## Link
-[Developer Portfolio](https://genjutsyou.github.io/Portfolio-Arun/)
+[Portfolio](https://genjutsyou.github.io/Portfolio-Arun/)
