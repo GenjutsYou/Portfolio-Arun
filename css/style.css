@@ -1,0 +1,409 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: ghostwhite;
+}
+
+body {
+	min-height: 100vh;
+	background-image: url('../images/genjutsu.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	display: flex;
+	flex-direction: column;
+    overflow-y: scroll;
+    background-attachment: fixed;
+	overflow-x: auto;
+}
+
+
+.hamburger {
+	cursor: pointer;
+	width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+    transform-origin: center;
+	margin: 2rem;
+}
+
+.hamburger-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+	background-color: black;
+}
+
+
+.header nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	background-color: black;
+}
+
+.header nav a {
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	align-items: center;
+}
+
+
+  
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+  
+  .hamburger {
+	display: flex;
+	align-self: flex-end;
+	flex-direction: column;
+	cursor: pointer;
+}
+  
+  .line {
+	width: 30px;
+	height: 3px;
+	background-color: black;
+	margin: 5px 0;
+	transition: transform 0.3s;
+}
+  
+  #menu {
+	display: none;
+  }
+  
+  #menu.open {
+	display: block;
+}
+  
+h1 {
+	font-size: 3rem;
+	text-align: left;
+	padding: 1rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+
+
+p {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+  
+main {
+	flex: 1 1 auto;
+	max-width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+main > section {
+	background-color: black;
+}
+
+main > section > h3 {
+
+}
+
+main > section p {
+	font-size: 1rem;
+}
+
+main > section > div {
+
+}
+
+#about {
+	flex: 0 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+#about h3 {
+	margin: 2rem;
+	font-size: 1.5rem;
+}
+
+#about p {
+	align-items: center;
+	line-height: 1.5;
+}
+
+#work {
+	flex: 0 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+#work h3 {
+	margin: 2rem;
+	font-size: 1.5rem;
+}
+
+#contact {
+	flex: 0 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+#contact h3 {
+	margin: 2rem;
+	font-size: 1.5rem;
+}
+
+#work {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    }
+
+#work .app-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    margin: 3rem;
+}
+
+#work .app-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#work .app-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+	flex-basis: calc(50% - 1rem);
+	height: 40vh;
+	margin: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 5rem;
+    transition: transform 0.3s;
+}
+
+#work .app-section:first-child {
+	height: 60vh;
+	flex-basis: 100%;
+    margin-bottom: 12rem;
+}
+
+#work .app1 img,
+#work .app2 img,
+#work .app3 img,
+#work .app4 img {
+	width: 100%;
+	height: auto;
+	margin-top: 1rem;
+    object-fit: contain;
+}
+
+#work .app1:hover {
+    transform: scale(1.03)
+}
+
+#work .app2:hover,
+#work .app3:hover,
+#work .app4:hover {
+  transform: scale(1.05);
+}
+
+footer {
+	text-align: center;
+    font-size: 1rem;
+    margin-top: 5rem;
+	background-color: black;
+}
+
+/* @media only screen and (max-width: 767px) {
+}
+
+@media only screen and (min-width: 768px){
+} */
+  
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1rem;
+        margin-top: 1rem;
+        overflow-x: auto;
+    }
+
+    .header nav a {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+
+    main > section {
+        padding: 1rem;
+    }
+
+    #about,
+    #work,
+    #contact {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    #work .app-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex-basis: calc(50% - 1rem);
+        height: 40vh;
+        margin: 0.5rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 5rem;
+        transition: transform 0.3s;
+    }
+
+    #work .app1 img,
+    #work .app2 img,
+    #work .app3 img {
+        margin-top: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    align-items: center;
+	    justify-content: space-between;
+	    margin-bottom: 3rem;
+	    background-color: black;
+    }
+
+    .header nav {
+        flex-direction: column;
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
+    .header nav a {
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+
+    main > section {
+        padding: 2rem;
+    }
+
+    #about,
+    #work,
+    #contact {
+        margin: 2rem;
+        padding: 2rem;
+    }
+
+    #work .app-section {
+        flex-basis: calc(50% - 1rem);
+        height: 40vh;
+        margin: 0.5rem;
+        margin-bottom: 5rem;
+    }
+
+    #work .app-section:first-child {
+        height: 60vh;
+        flex-basis: 100%;
+    }
+
+    #work .app1 img,
+    #work .app2 img,
+    #work .app3 img {
+        margin-top: 1rem;
+    }
+}
+
+  

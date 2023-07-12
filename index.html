@@ -4,73 +4,90 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<script src="./js/script.js"></script>
 	</head>
 	<body>
 		<header class="header">
-			<h1>My Portfolio</h1>
+			<h1>Portfolio</h1>
 			<div class="nav-container">
-				<nav>
-					<a href="#about">About Me</a>
-					<a href="#work">My Work</a>
-					<a href="#contact">Contact Me</a>
+				<span class="tooltip">Click Here!</span>
+				<img src="./images/sharingan.jpg" alt="Hamburger Icon" class="hamburger" onclick="toggleMenu()" />
+				<nav id="menu">
+					<a href="#" onclick="toggleSection('about')">About Me</a>
+					<a href="#" onclick="toggleSection('work')">My Work</a>
+					<a href="#" onclick="toggleSection('contact')">Contact Me</a>
 				</nav>
 			</div>
 		</header>		
-		<div class="hero">
-			<img src="EMS2.0.jpg" alt="Hero Image" style="width: 80px; height: 80px" />
-			<div class="hero-content">
-				<h2>Arun Mundackal</h2>
-			</div>
-		</div>		
 		<main>
 			<section id="about">
-				<h3>About Me</h3>
+				<h2>About Me</h2>
 				<div>
-				<p>
-				Welcome to my professional portfolio website! My name is Arun, and I am a dedicated developer currently enrolled in a comprehensive fullstack coding bootcamp at the University of Arizona. I have a passion for building dynamic web applications using a wide array of technologies, including HTML, CSS, and JavaScript.
+					<p>
+						Welcome to my professional portfolio website! My name is Arun, and I am a dedicated developer currently enrolled in a comprehensive fullstack coding bootcamp at the University of Arizona. I have a passion for building dynamic web applications using a wide array of technologies, including HTML, CSS, and JavaScript.
 
-            	In addition to my web development expertise, I am also deeply fascinated by the realms of game development and artificial intelligence. I am actively pursuing opportunities to expand my knowledge and skills in these areas, as I believe they hold immense potential for innovation and creativity. 
+						In addition to my web development expertise, I am also deeply fascinated by the realms of game development and artificial intelligence. I am actively pursuing opportunities to expand my knowledge and skills in these areas, as I believe they hold immense potential for innovation and creativity. 
 
-            	I invite you to explore my portfolio, where I showcase my proficiency in creating innovative and user-friendly web solutions. It is my goal to provide engaging and seamless experiences for users through my work.
+						I invite you to explore my portfolio, where I showcase my proficiency in creating innovative and user-friendly web solutions. It is my goal to provide engaging and seamless experiences for users through my work.
 
-				Thank you for taking the time to visit my website. I am thrilled to demonstrate my abilities and growth in the field of web development. If you have any questions or would like to discuss potential opportunities, please feel free to reach out. I am always eager to connect and collaborate!
-				</p>
+						Thank you for taking the time to visit my website. I am thrilled to demonstrate my abilities and growth in the field of web development. If you have any questions or would like to discuss potential opportunities, please feel free to reach out. I am always eager to connect and collaborate!
+					</p>
 				</div>
 			</section>
 			<section id="work">
 				<h3>My Work</h3>
 				<div class="app-container">
-					<a href="https://github.com/GenjutsYou" class="app-section app1">
-						<h5>Application 1</h5>
-						<p>Cloud</p>
-            <img src="./cloud.jpg" alt="Cloud Image">
-					</a>
-					<a href="https://github.com/GenjutsYou?tab=repositories" class="app-section app2">
-						<h5 id="app2">Application 2</h5>
-						<p>Playground</p>
-            <img src="./playground.jpg" alt="Playground Image">
-					</a>
-					<a href="https://github.com/GenjutsYou?tab=projects" class="app-section app3">
-						<h5 id="app3">Application 3</h5>
-						<p>Overflow</p>
-            <img src="./rain.jpg" alt="Rain Image">
-					</a>
-				</div>
+				<!-- <a href="https://github.com/GenjutsYou" class="app-section app1">
+					<h5>Cloud</h5>
+					<p>Application 1</p>
+					<img src="./images/cloud.gif" alt="Cloud Image">
+				</a>
+				<a href="https://github.com/GenjutsYou?tab=repositories" class="app-section app2">
+					<h5 id="app2">Application 2</h5>
+					<p>Playground</p>
+					<img src="./images/playground.gif" alt="Playground Image">
+				</a>
+				<a href="https://github.com/GenjutsYou?tab=projects" class="app-section app3">
+					<h5 id="app3">Application 3</h5>
+					<p>Overflow</p>
+					<img src="./images/rain.gif" alt="Rain Image">
+				</a> -->
+				<a href="https://github.com/GenjutsYou" class="app-section app1">
+					<h5>Application 1</h5>
+					<p>Cloud</p>
+					<img src="./images/cloud.gif" alt="Cloud Image">
+				</a>
+				<a href="https://github.com/GenjutsYou?tab=repositories" class="app-section app2">
+					<h5 id="app2">Application 2</h5>
+					<p>Playground</p>
+					<img src="./images/playground.gif" alt="Playground Image">
+				</a>
+				<a href="https://github.com/GenjutsYou?tab=projects" class="app-section app3">
+					<h5 id="app3">Application 3</h5>
+					<p>Overflow</p>
+					<img src="./images/rain.gif" alt="Rain Image">
+				</a>
+				<a href="https://anime-trivia-afe9a77ab61d.herokuapp.com/login" class="app-section app4">
+					<h5 id="app4">Application 4</h5>
+					<p>Projects</p>
+					<img src="./images/team.gif" alt="Team Image">
+				</a>
+			</div>
 			</section>
 			<section id="contact">
 				<h3>Contact Me</h3>
 				<div>
-          <p>Feel free to reach out to me with any questions, inquiries, or opportunities you may have! </p>
-          <p>My Email: <a href="mailto:arunmundackal7@gmail.com">arunmundackal7@gmail.com</a></p>
+					<p>Feel free to reach out to me with any questions, inquiries, or opportunities you may have! </p>
+					<p>My Email: <a href="mailto:arunmundackal7@gmail.com">arunmundackal7@gmail.com</a></p>
 				</div>
 			</section>
 		</main>
-    <footer>
-      <p>"No matter what darkness lies ahead, as long as you keep moving forward, you will eventually reach the light."</p>
-      <p>- Itachi Uchiha</p>
-    </footer>
-  	</body>
+		<footer>
+			<p>"No matter what darkness lies ahead, as long as you keep moving forward, you will eventually reach the light."</p>
+			<p>- Itachi Uchiha</p>
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
 </html>
-
