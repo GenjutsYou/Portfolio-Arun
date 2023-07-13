@@ -20,11 +20,10 @@ body {
 	overflow-x: auto;
 }
 
-
 .hamburger {
 	cursor: pointer;
-	width: 100px;
-    height: 100px;
+	width: 80px;
+    height: 80px;
     animation: rotate 2s linear infinite;
     transform-origin: center;
 	margin: 2rem;
@@ -48,7 +47,6 @@ body {
 	background-color: black;
 }
 
-
 .header nav {
 	display: flex;
 	flex-direction: column;
@@ -64,8 +62,6 @@ body {
 	margin-right: 10px;
 	align-items: center;
 }
-
-
   
 @keyframes rotate {
     from {
@@ -88,15 +84,15 @@ body {
 	align-items: center;
 	padding: 10px;
 }
-  
-  .hamburger {
+
+.hamburger {
 	display: flex;
 	align-self: flex-end;
 	flex-direction: column;
 	cursor: pointer;
 }
   
-  .line {
+.line {
 	width: 30px;
 	height: 3px;
 	background-color: black;
@@ -104,11 +100,11 @@ body {
 	transition: transform 0.3s;
 }
   
-  #menu {
+#menu {
 	display: none;
-  }
+}
   
-  #menu.open {
+#menu.open {
 	display: block;
 }
   
@@ -148,17 +144,6 @@ main > section {
 	background-color: black;
 }
 
-main > section > h3 {
-
-}
-
-main > section p {
-	font-size: 1rem;
-}
-
-main > section > div {
-
-}
 
 #about {
 	flex: 0 1 auto;
@@ -176,27 +161,6 @@ main > section > div {
 	font-size: 1.5rem;
 }
 
-#about p {
-	align-items: center;
-	line-height: 1.5;
-}
-
-#work {
-	flex: 0 1 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 2rem;
-	padding: 2rem;
-	box-sizing: border-box;
-}
-
-#work h3 {
-	margin: 2rem;
-	font-size: 1.5rem;
-}
-
 #contact {
 	flex: 0 1 auto;
 	display: flex;
@@ -208,11 +172,6 @@ main > section > div {
 	box-sizing: border-box;
 }
 
-#contact h3 {
-	margin: 2rem;
-	font-size: 1.5rem;
-}
-
 #work {
     flex: 0 1 auto;
     display: flex;
@@ -222,7 +181,7 @@ main > section > div {
     margin: 2rem;
     padding: 2rem;
     box-sizing: border-box;
-    }
+}
 
 #work .app-container {
 	display: flex;
@@ -284,15 +243,9 @@ footer {
     margin-top: 5rem;
 	background-color: black;
 }
-
-/* @media only screen and (max-width: 767px) {
-}
-
-@media only screen and (min-width: 768px){
-} */
   
 @media only screen and (max-width: 767px) {
-    body {
+body {
         min-height: 100vh;
         background-color: black;
         background-image: url('../images/sky.jpg');
@@ -313,7 +266,6 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* margin-bottom: 1rem; */
     }
 
     .header nav {
@@ -328,8 +280,6 @@ footer {
         margin-bottom: 0;
         margin-right: 2rem;
     }
-
-
 
     main > section {
         padding: 1rem;
@@ -347,19 +297,26 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        flex-basis: calc(50% - 1rem);
-        height: 40vh;
-        margin: 0.5rem;
+        flex-basis: auto;
+        height: auto;
+        margin: 0.25rem;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
         transition: transform 0.3s;
     }
 
+    #work .app-section:first-child {
+        height: 60vh;
+        flex-basis: 100%;
+        margin-bottom: 0;
+      }
+
     #work .app1 img,
     #work .app2 img,
-    #work .app3 img {
+    #work .app3 img, 
+    #work .app4 img {
         margin-top: 0.5rem;
     }
 }
@@ -416,7 +373,6 @@ footer {
     #work .app-section {
         flex-basis: calc(50% - 1rem);
         height: 40vh;
-        /* margin: 0.5rem; */
         margin-bottom: 5rem;
     }
 
@@ -427,7 +383,8 @@ footer {
 
     #work .app1 img,
     #work .app2 img,
-    #work .app3 img {
+    #work .app3 img,
+    #work .app4 img {
         margin-top: 1rem;
     }
 }
