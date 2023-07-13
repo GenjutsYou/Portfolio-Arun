@@ -10,6 +10,8 @@ Thank you for visiting!
 
 # Developer Portfolio
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 As an employer, you have the opportunity to explore my portfolio and witness the growth and evolution of my projects, ranging from HTML and CSS to JavaScript. Take your time to delve into the diverse range of projects I have worked on, each reflecting my unwavering dedication and commitment to delivering top-notch web solutions.
@@ -38,8 +40,6 @@ Arun Mundackal
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
 
