@@ -21,6 +21,10 @@ body {
 }
 
 .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	cursor: pointer;
 	width: 80px;
     height: 80px;
@@ -84,13 +88,6 @@ body {
 	align-items: center;
 	padding: 10px;
 }
-
-.hamburger {
-	display: flex;
-	align-self: flex-end;
-	flex-direction: column;
-	cursor: pointer;
-}
   
 .line {
 	width: 30px;
@@ -122,13 +119,12 @@ h3 {
 	font-size: 2rem;
 }
 
-
-
 p {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 20px;
+  margin: 1rem;
+  padding: 1rem;
   border-radius: 5px;
 }
   
@@ -138,10 +134,17 @@ main {
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main > section {
 	background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
 }
 
 
@@ -187,6 +190,7 @@ main > section {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+    align-items: center;
     margin: 3rem;
 }
 
@@ -204,7 +208,7 @@ main > section {
 	flex-basis: calc(50% - 1rem);
 	height: 40vh;
 	margin: 0.5rem;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 5rem;
@@ -235,6 +239,13 @@ main > section {
 #work .app3:hover,
 #work .app4:hover {
   transform: scale(1.05);
+}
+
+div.connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
