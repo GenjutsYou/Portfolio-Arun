@@ -10,10 +10,11 @@
 	</head>
 	<body>
 		<header class="header">
-			<h1>Portfolio</h1>
+			<h1 class="hover-effect">Portfolio</h1>
 			<div class="nav-container">
-				<span class="tooltip">Click Here!</span>
-				<img src="./images/sharingan.jpg" alt="Hamburger Icon" class="hamburger" onclick="toggleMenu()" />
+				<h2 class="hover-effect"><span class="tooltip">Explore -></span>
+				<img src="./images/ring.gif" alt="Hamburger Icon" class="hamburger" onclick="toggleMenu()" />
+				</h2>
 				<nav id="menu">
 					<a href="#" onclick="toggleSection('about')">About Me</a>
 					<a href="#" onclick="toggleSection('work')">My Work</a>
@@ -23,65 +24,119 @@
 		</header>		
 		<main>
 			<section id="about">
-				<h2>About Me</h2>
-				<div>
-					<p>
-						Welcome to my professional portfolio website! My name is Arun, and I am a dedicated developer currently enrolled in a comprehensive fullstack coding bootcamp at the University of Arizona. I have a passion for building dynamic web applications using a wide array of technologies, including HTML, CSS, and JavaScript.
+			  <h3 class="hover-effect">About Me</h3>
+			  <div>
+				<p>
+				  Welcome to my professional portfolio website! My name is Arun, and I am a dedicated developer currently enrolled in a comprehensive fullstack coding bootcamp at the University of Arizona. I have a passion for building dynamic web applications using a wide array of technologies, including HTML, CSS, and JavaScript.
 
-						In addition to my web development expertise, I am also deeply fascinated by the realms of game development and artificial intelligence. I am actively pursuing opportunities to expand my knowledge and skills in these areas, as I believe they hold immense potential for innovation and creativity. 
+				  In addition to my web development expertise, I am also deeply fascinated by the realms of game development and artificial intelligence. I am actively pursuing opportunities to expand my knowledge and skills in these areas, as I believe they hold immense potential for innovation and creativity. 
 
-						I invite you to explore my portfolio, where I showcase my proficiency in creating innovative and user-friendly web solutions. It is my goal to provide engaging and seamless experiences for users through my work.
+				  I invite you to explore my portfolio, where I showcase my proficiency in creating innovative and user-friendly web solutions. It is my goal to provide engaging and seamless experiences for users through my work.
 
-						Thank you for taking the time to visit my website. I am thrilled to demonstrate my abilities and growth in the field of web development. If you have any questions or would like to discuss potential opportunities, please feel free to reach out. I am always eager to connect and collaborate!
-					</p>
-				</div>
+				  Thank you for taking the time to visit my website. I am thrilled to demonstrate my abilities and growth in the field of web development. If you have any questions or would like to discuss potential opportunities, please feel free to reach out. I am always eager to connect and collaborate!
+				</p>
+			  </div>
 			</section>
 			<section id="work">
-				<h3>My Work</h3>
-				<div class="app-container">
-				<a href="https://github.com/GenjutsYou" class="app-section app1">
-					<h5>Application 1</h5>
-					<p>Cloud</p>
-					<img src="./images/cloud.gif" alt="Cloud Image">
+			  <h3 class="hover-effect">My Work</h3>
+			  <div class="app-container">
+				<a href="#app1-container" onclick="showContainer('app1-container')" class="app-section app1">
+					<h4 class="hover-effect">Application 1</h4>
+					<p>Core</p>
+					<img class="main-image" src="./images/cpu.gif" alt="Image">
+					<div id="app1-container" style="display: none;">
+					  <h5 class="hover-effect">Close</h5>
+					  <p>NetWork</p>
+						<img class="container-image" src="./images/worldwide.gif" alt="Image" onclick="showContainerContent(event, 'app1-content-container')">
+						<div id="app1-content-container" style="display: none;">
+						  <h5 onclick="closeContentContainer(event, 'app1-content-container')">Close</h5>
+							<a href="https://github.com/GenjutsYou" class="Network">
+							  <h6>GitHub</h6>
+							  <img class="Network" src="./images/github.jpg" alt="GitHub">
+							  <img class="hover-image" src="https://img.shields.io/badge/GitHub-white" alt="GitHub">
+							</a>
+							<a href="https://www.linkedin.com/in/arun-mundackal/" class="Network">
+								<h6>LinkedIn</h6>
+								<img class="Network" src="./images/linkedin.jpg" alt="LinkedIn">
+								<img class="hover-image" src="https://img.shields.io/badge/LinkedIn-white" alt="LinkedIn">
+							  </a>
+							<a href="mailto:arunmundackal7@gmail.com" class="Network">
+							  <h6>Email</h6>
+							  <img class="Network" src="./images/gmail.jpg" alt="@arunmundackal7@gmail.com">
+							  <img class="hover-image" src="https://img.shields.io/badge/@arunmundackal7-white" alt="@arunmundackal7@gmail.com">
+							</a>
+						</div>
+					</div>
 				</a>
-				<a href="https://github.com/GenjutsYou?tab=repositories" class="app-section app2">
-					<h5 id="app2">Application 2</h5>
-					<p>Playground</p>
-					<img src="./images/playground.gif" alt="Playground Image">
+				<a href="#app2-container" onclick="showContainer('app2-container')" class="app-section app2">
+					<h4 class="hover-effect">Application 2</h4>
+					<p>Code</p>
+					<img class="main-image" src="./images/matrix.gif" alt="Image">
+					<div id="app2-container" style="display: none;">
+						<h5 class="hover-effect">Close</h5>
+						<p>Repositories</p>
+						  <img class="container-image" src="./images/cat.gif" alt="Image" onclick="showContainerContent(event, 'app2-content-container')">
+						  <div id="app2-content-container" style="display: none;">
+							<h5 onclick="closeContentContainer(event, 'app2-content-container')">Close</h5>
+							  <a href="https://github.com/GenjutsYou/Work-Day-Scheduler" class="Repositories">
+								<h6>Work-Day-Scheduler</h6>
+								<img class="Repositories" src="./images/scheduler.jpg" alt="Work-Day-Scheduler">
+						  		<img class="hover-image" src="https://img.shields.io/badge/Work_Day_Scheduler-white" alt="Work-Day-Scheduler">
+							  </a>
+							  <a href="https://github.com/GenjutsYou/Note-Taker" class="Repositories">
+								<h6>Note-Taker</h6>
+								<img class="Repositories" src="./images/notes.jpg" alt="Note-Taker">
+						  		<img class="hover-image" src="https://img.shields.io/badge/Note_Taker-white" alt="Note-Taker">
+							  </a>
+							  <a href="https://github.com/GenjutsYou/weather-dashboard" class="Repositories">
+								<h6>Weather-Dashboard</h6>
+								<img class="Repositories" src="./images/weather.jpg" alt="Weather-Dashboard">
+						  		<img class="hover-image" src="https://img.shields.io/badge/Weather_Dashboard-white" alt="Weather-Dashboard">
+							  </a>
+					  	  </div>
+						<p>Projects</p>
+						  <img class="container-image" src="./images/duck.gif" alt="Image" onclick="showContainerContent(event, 'app2.2-content-container')">
+						  <div id="app2.2-content-container" style="display: none;">
+							<h5 onclick="closeContentContainer(event, 'app2.2-content-container')">Close</h5>
+							  <a href="https://github.com/GenjutsYou/anime-trivia-web-game" class="Projects">
+								<h6>Anime-Trivia-Web-Game</h6>
+								<img class="Projects" src="./images/anime.jpg" alt="Anime-Trivia-Web-Game">
+						  		<img class="hover-image" src="https://img.shields.io/badge/Anime_Trivia-white" alt="Anime-Trivia-Web-Game">
+							  </a>
+					  	  </div>				  
+					</div>
 				</a>
-				<a href="https://github.com/GenjutsYou?tab=projects" class="app-section app3">
-					<h5 id="app3">Application 3</h5>
-					<p>Overflow</p>
-					<img src="./images/rain.gif" alt="Rain Image">
-				</a>
-				<a href="https://anime-trivia-afe9a77ab61d.herokuapp.com/login" class="app-section app4">
-					<h5 id="app4">Application 4</h5>
-					<p>Projects</p>
-					<img src="./images/team.gif" alt="Team Image">
-				</a>
-			</div>
+			  </div>
 			</section>
 			<section id="contact">
-				<h3>Contact Me</h3>
-				<div>
-					<p>Feel free to reach out to me with any questions, inquiries, or opportunities you may have! </p>
-					<div class ="connect">
-						<a href="mailto:arunmundackal7@gmail.com">@arunmundackal7@gmail.com</a>
-						<a href="https://github.com/GenjutsYou">GitHub</a>
-					</div>
+			  <h3 class="hover-effect">Contact Me</h3>
+			  <div>
+				<p>Feel free to reach out with any questions, inquiries, or opportunities you may have! </p>
+				<div class="connect">
+				  <a href="mailto:arunmundackal7@gmail.com">
+					<img class="hover-image" src="https://img.shields.io/badge/@arunmundackal7-white" alt="@arunmundackal7@gmail.com" />
+				  </a>
+				  <a href="https://github.com/GenjutsYou">
+					<img class="hover-image" src="https://img.shields.io/badge/GitHub-white" alt="GitHub" />
+				  </a>
+				  <a href="https://www.linkedin.com/in/arun-mundackal/">
+					<img class="hover-image" src="https://img.shields.io/badge/LinkedIn-white" alt="LinkedIn" />
+				  </a>
 				</div>
+				<p>Thanks for visiting!</p>
+			  </div>
 			</section>
-		</main>
+		  </main>
+		  
 		<footer>
 			<div id="about-quote">
-			  <p>"The only difference between the master and the novice is that the master has failed more times then the novice has tried."</p>
+			  <p>"The only difference between the master and the novice is that the master has failed more times than the novice has tried."</p>
 			</div>
 			<div id="work-quote">
-			  <p>""Are you a different animal and the same beast?""</p>
+			  <p>"Are you a different animal and the same beast?"</p>
 			</div>
 			<div id="contact-quote">
 				<p>"No matter what darkness lies ahead, as long as you keep moving forward, you will eventually reach the light."</p>
-				<!-- <p>- Itachi Uchiha</p> -->
 			</div>
 		  </footer>
 		  

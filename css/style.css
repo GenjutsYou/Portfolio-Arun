@@ -8,9 +8,9 @@
 
 body {
 	min-height: 100vh;
-	background-image: url('../images/genjutsu.gif');
+    background-image: url('../images/raindrop.gif');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: auto 100vh;
 	background-position: center;
     background-attachment: fixed;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -20,7 +20,20 @@ body {
 	overflow-x: auto;
 }
 
+@keyframes pulsate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 .hamburger {
+    animation: pulsate 2s ease-in-out infinite;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,9 +41,9 @@ body {
 	cursor: pointer;
 	width: 80px;
     height: 80px;
-    animation: rotate 2s linear infinite;
+    /* animation: rotate 2s linear infinite; */
     transform-origin: center;
-	margin: 2rem;
+	margin: 1rem;
 }
 
 .hamburger-container {
@@ -49,6 +62,7 @@ body {
 	justify-content: space-between;
 	margin-bottom: 3rem;
 	background-color: black;
+    box-shadow: 0 0 0 1px lightcyan;
 }
 
 .header nav {
@@ -67,14 +81,14 @@ body {
 	align-items: center;
 }
   
-@keyframes rotate {
+/* @keyframes rotate {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
     }
-}
+} */
 
 .nav-container {
 	display: flex;
@@ -112,11 +126,28 @@ h1 {
 }
 
 h2 {
-	font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	font-size: 2rem;
 }
 
 h3 {
 	font-size: 2rem;
+}
+
+h5{
+    transition: transform 0.3s ease;
+}
+
+h5:hover {
+    transform: scale(1.1);
+}
+
+h6 {
+    font-size: 1.25rem;
+    margin: 10px;
 }
 
 p {
@@ -127,7 +158,7 @@ p {
   padding: 1rem;
   border-radius: 5px;
 }
-  
+
 main {
 	flex: 1 1 auto;
 	max-width: 90vw;
@@ -147,16 +178,26 @@ main > section {
     line-height: 2;
 }
 
-
-#about {
-	flex: 0 1 auto;
+#about,
+#work,
+#contact {
+	flex: 0 1 calc(50% - 2rem);
 	display: flex;
 	flex-direction: column;
+    justify-content: center;
 	align-items: center;
 	text-align: center;
 	margin: 2rem;
 	padding: 2rem;
 	box-sizing: border-box;
+    box-shadow: 0 0 0 1px lightcyan;
+}
+
+div.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #about h3 {
@@ -164,40 +205,12 @@ main > section {
 	font-size: 1.5rem;
 }
 
-#contact {
-	flex: 0 1 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 2rem;
-	padding: 2rem;
-	box-sizing: border-box;
-}
-
-#work {
-    flex: 0 1 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 2rem;
-    padding: 2rem;
-    box-sizing: border-box;
-}
-
 #work .app-container {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
     align-items: center;
     margin: 3rem;
-}
-
-#work .app-row {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
 }
 
 #work .app-section {
@@ -206,8 +219,7 @@ main > section {
     align-items: center;
     justify-content: flex-start;
 	flex-basis: calc(50% - 1rem);
-	height: 40vh;
-	margin: 0.5rem;
+	margin: 1rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,53 +227,205 @@ main > section {
     transition: transform 0.3s;
 }
 
-#work .app-section:first-child {
-	height: 60vh;
-	flex-basis: 100%;
-    margin-bottom: 12rem;
-}
-
-#work .app1 img,
-#work .app2 img,
-#work .app3 img,
-#work .app4 img {
-	width: 100%;
-	height: auto;
-	margin-top: 1rem;
-    object-fit: contain;
-}
-
-#work .app1:hover {
-    transform: scale(1.03)
-}
-
+#work .app1:hover,
 #work .app2:hover,
 #work .app3:hover,
 #work .app4:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-div.connect {
+.hover-effect {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1);
+}
+
+.hover-image {
+    transition: transform 0.3s ease;
+}
+  
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+.main-image {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 1px lightcyan;
+    width: 500px;
+}
+  
+.main-image:hover {
+    transform: scale(1.1);
+}
+
+.container-image {
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 1px lightcyan;
+    width: 200px;
+}
+  
+.container-image:hover {
+    transform: scale(1.1);
+}
+
+.app-section {
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    padding: 1rem;
+}
+  
+.app-section:hover {
+    transform: scale(1.1);
+}
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app1-container,
+#app2-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+.app-section.app2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app1-content-container,
+#app2-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app1-content-container img,
+#app2-content-container img  {
+    margin: 10px;
+}
+
+#app1-content-container a,
+#app2-content-container a {
+    text-decoration: none;
+}
+
+a.Network,
+a.Repositories,
+a.Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+a.Network:hover,
+a.Repositories:hover,
+a.Projects:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 1px lightcyan;
+}
+
+img.Network {
+    width: 100px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+img.Network:hover {
+    transform: scale(1.1);
+}
+
+img.Repositories,
+img.Projects {
+    width: 200px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+img.Repositories:hover,
+img.Projects:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px 2px lightslategrey;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } 
+
+  /* Apply the fade-in animation to all sections */
+section {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+/* Apply the fade-in animation to elements inside #app2-container */
+#app2-container * {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Apply the fade-in animation to all app sections within the app container */
+.app-container a {
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  /* Apply the fade-in animation to the images one at a time */
+.connect a img {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  /* Apply delays to the images to stagger their appearance */
+  .connect a:nth-child(1) img {
+    animation-delay: 0.5s;
+  }
+  
+  .connect a:nth-child(2) img {
+    animation-delay: 1s;
+  }
+  
+  .connect a:nth-child(3) img {
+    animation-delay: 1.5s;
+  }
+
+  
+  
 
 footer {
 	text-align: center;
     font-size: 1rem;
     margin-top: 5rem;
 	background-color: black;
+    box-shadow: 0 0 0 1px lightcyan;
 }
   
 @media only screen and (max-width: 767px) {
 body {
         min-height: 100vh;
+        background-image: url('../images/raindrop.gif');
         background-color: black;
-        background-image: url('../images/sky.jpg');
-        background-repeat: repeat;
-        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: auto 100vh;
         background-position: center;
         background-attachment: fixed;
         font-size: 14px;
@@ -283,7 +447,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         font-size: 1rem;
-        margin-top: 1rem;
+        /* margin-top: 1rem; */
         overflow-x: auto;
     }
 
@@ -303,6 +467,15 @@ body {
         padding: 1rem;
     }
 
+    #work {
+        width: 350px;
+    }
+
+    #work .app-container {
+        margin: 0;
+        padding: 10px;
+    }
+
     #work .app-section {
         display: flex;
         flex-direction: column;
@@ -310,34 +483,37 @@ body {
         justify-content: flex-start;
         flex-basis: auto;
         height: auto;
-        margin: 0.25rem;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 1rem;
+        margin: 1rem;
         transition: transform 0.3s;
     }
-
-    #work .app-section:first-child {
-        height: 60vh;
-        flex-basis: 100%;
-        margin-bottom: 0;
-      }
 
     #work .app1 img,
     #work .app2 img,
     #work .app3 img, 
     #work .app4 img {
-        margin-top: 0.5rem;
+        margin: 0.5rem;
     }
+
+    .main-image {
+        width: 300px;
+        /* height: 300px; */
+    }
+
+    .container-image {
+        width: 200px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
     body {
         min-height: 100vh;
-        background-image: url('../images/genjutsu.gif');
+        background-image: url('../images/raindrop.gif');
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto 100vh;
         background-position: center;
         font-size: 16px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande','Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -382,21 +558,24 @@ body {
     }
 
     #work .app-section {
-        flex-basis: calc(50% - 1rem);
-        height: 40vh;
-        margin-bottom: 5rem;
-    }
-
-    #work .app-section:first-child {
-        height: 60vh;
-        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        flex-basis: auto;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 1rem;
+        transition: transform 0.3s;
     }
 
     #work .app1 img,
     #work .app2 img,
     #work .app3 img,
     #work .app4 img {
-        margin-top: 1rem;
+        margin: 1rem;
     }
 }
 
